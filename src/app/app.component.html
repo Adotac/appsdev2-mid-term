@@ -1,12 +1,13 @@
 <div class="container mt-4 text-center">
-  <app-number-input
+  <app-number-input id="numInput"
     (firstNumber)="receiveFromInput($event)"
     (secondNumber)="receiveFromInput($event)"
   ></app-number-input>
 
-  <app-operation (operation)="receiveOperation($event)"></app-operation>
+  <app-operation id="recOper" (operation)="receiveOperation($event)"></app-operation>
 
   <app-result
+    id="resultIF"
     *ngIf="
       operation &&
       (firstNumber || firstNumber == 0) &&
