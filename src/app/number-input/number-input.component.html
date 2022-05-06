@@ -1,10 +1,11 @@
 <div>
   <div class="col">
     <div class="col">
-      <label for="">First Number</label>
+      <label id="firstlabel" for="">First Number</label>
     </div>
     <div class="col">
       <input
+        id="firstInput"
         (input)="numberInput(firstNumber.value, 0)"
         type="number"
         #firstNumber
@@ -13,10 +14,11 @@
   </div>
   <div class="col mt-1">
     <div class="col">
-      <label for="">Second Number</label>
+      <label id="secondlabel" for="">Second Number</label>
     </div>
     <div class="col">
       <input
+        id="secondInput"
         (input)="numberInput(secondNumber.value, 1)"
         type="number"
         #secondNumber
